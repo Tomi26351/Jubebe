@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jubebe", "Jubebe.csproj", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "..\ClassLibrary1\ClassLibrary1.csproj", "{63D5B2AB-638C-4750-8BEB-10B48705CE68}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "..\Database\Database.csproj", "{98844DD3-E2DB-485B-824F-1CF3913A6DF5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,10 @@ Global
 		{63D5B2AB-638C-4750-8BEB-10B48705CE68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63D5B2AB-638C-4750-8BEB-10B48705CE68}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63D5B2AB-638C-4750-8BEB-10B48705CE68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98844DD3-E2DB-485B-824F-1CF3913A6DF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98844DD3-E2DB-485B-824F-1CF3913A6DF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98844DD3-E2DB-485B-824F-1CF3913A6DF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98844DD3-E2DB-485B-824F-1CF3913A6DF5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
