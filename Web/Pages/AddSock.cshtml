@@ -1,2 +1,41 @@
 @page
-@model AddSock
+@model Jubebe.Web.Pages.AddSockModel   
+@{
+    ViewData["Title"] = "Add Sock";
+}
+
+<h2>Add Sock</h2>
+
+<form method="post" class="form-horizontal">
+    <div class="form-group">
+        <label asp-for="Sock.SerialNumber" class="control-label"></label>
+        <input asp-for="Sock.SerialNumber" class="form-control" />
+        <span asp-validation-for="Sock.SerialNumber" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Sock.PricePerPair" class="control-label"></label>
+        <input asp-for="Sock.PricePerPair" class="form-control" />
+        <span asp-validation-for="Sock.PricePerPair" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Sock.QuantityPerSack" class="control-label"></label>
+        <input asp-for="Sock.QuantityPerSack" class="form-control" />
+        <span asp-validation-for="Sock.QuantityPerSack" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Sock.SackQuantity" class="control-label"></label>
+        <input asp-for="Sock.SackQuantity" class="form-control" />
+        <span asp-validation-for="Sock.SackQuantity" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Sock.dateTime" class="control-label"></label>
+        <input asp-for="Sock.dateTime" type="date" class="form-control" />
+        <span asp-validation-for="Sock.dateTime" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add</button>
+</form>
