@@ -1,41 +1,57 @@
 @page
-@model Jubebe.Web.Pages.AddSockModel   
+@model Jubebe.Web.Pages.AddSockModel
 @{
     ViewData["Title"] = "Add Sock";
 }
 
-<h2>Add Sock</h2>
-
-<form method="post" class="form-horizontal">
-    <div class="form-group">
-        <label asp-for="Sock.SerialNumber" class="control-label"></label>
-        <input asp-for="Sock.SerialNumber" class="form-control" />
-        <span asp-validation-for="Sock.SerialNumber" class="text-danger"></span>
+<div class="container py-4">
+    <div class="d-flex align-items-center justify-content-between mb-3">
+        <div>
+            <h2 class="h4 mb-1 page-title">Добави чорап</h2>
+            <div class="subtitle">Въведи нов артикул в склада</div>
+        </div>
+        <a asp-page="/SocksOverview" class="btn btn-outline-secondary">
+            ← Back to Overview
+        </a>
     </div>
 
-    <div class="form-group">
-        <label asp-for="Sock.PricePerPair" class="control-label"></label>
-        <input asp-for="Sock.PricePerPair" class="form-control" />
-        <span asp-validation-for="Sock.PricePerPair" class="text-danger"></span>
-    </div>
+    <div class="card form-card">
+        <div class="card-body p-4">
+            <form method="post">
+                <div class="mb-3">
+                    <label class="form-label fw-semibold">Serial Number / Сериен Номер</label>
+                    <input asp-for="Sock.SerialNumber" class="form-control" placeholder="Enter serial number..." />
+                    <span asp-validation-for="Sock.SerialNumber" class="text-danger small"></span>
+                </div>
 
-    <div class="form-group">
-        <label asp-for="Sock.QuantityPerSack" class="control-label"></label>
-        <input asp-for="Sock.QuantityPerSack" class="form-control" />
-        <span asp-validation-for="Sock.QuantityPerSack" class="text-danger"></span>
-    </div>
+                <div class="mb-3">
+                    <label class="form-label fw-semibold">Price per pair / Цена на бройка</label>
+                    <input asp-for="Sock.PricePerPair" class="form-control" placeholder="0.00" />
+                    <span asp-validation-for="Sock.PricePerPair" class="text-danger small"></span>
+                </div>
 
-    <div class="form-group">
-        <label asp-for="Sock.SackQuantity" class="control-label"></label>
-        <input asp-for="Sock.SackQuantity" class="form-control" />
-        <span asp-validation-for="Sock.SackQuantity" class="text-danger"></span>
-    </div>
+                <div class="mb-3">
+                    <label class="form-label fw-semibold">Quantity per sack / Брой в човал</label>
+                    <input asp-for="Sock.QuantityPerSack" class="form-control" placeholder="e.g. 12" />
+                    <span asp-validation-for="Sock.QuantityPerSack" class="text-danger small"></span>
+                </div>
 
-    <div class="form-group">
-        <label asp-for="Sock.dateTime" class="control-label"></label>
-        <input asp-for="Sock.dateTime" type="date" class="form-control" />
-        <span asp-validation-for="Sock.dateTime" class="text-danger"></span>
-    </div>
+                <div class="mb-3">
+                    <label class="form-label fw-semibold">Sack quantity / Брой на човали</label>
+                    <input asp-for="Sock.SackQuantity" class="form-control" placeholder="e.g. 100" />
+                    <span asp-validation-for="Sock.SackQuantity" class="text-danger small"></span>
+                </div>
 
-    <button type="submit" class="btn btn-primary">Add</button>
-</form>
+                <div class="mb-4">
+                    <label class="form-label fw-semibold">Date / Дата</label>
+                    <input asp-for="Sock.dateTime" type="date" class="form-control" />
+                    <span asp-validation-for="Sock.dateTime" class="text-danger small"></span>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-success custom-btn">➕ Add Sock</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

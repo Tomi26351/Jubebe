@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0Onw51Ns5KiAbSgW20aQaprLdJrZMHvnWc+zgL4IvZI=",
+  "Hash": "oxOmj97sEEAB7tVh6r2uzPKdZF824dgvGFNn17ZNZJo=",
   "Source": "Jubebe",
   "BasePath": "_content/Jubebe",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\yizem\\Documents\\Jubebe\\Web\\wwwroot\\images\\logo.png",
+      "SourceId": "Jubebe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\yizem\\Documents\\Jubebe\\Web\\wwwroot\\",
+      "BasePath": "_content/Jubebe",
+      "RelativePath": "images/logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logo.png"
     },
     {
       "Identity": "C:\\Users\\yizem\\Documents\\Jubebe\\Web\\wwwroot\\js\\site.js",
