@@ -1,0 +1,51 @@
+@page
+@model Jubebe.Web.Pages.SocksOverviewModel
+@{
+    ViewData["Title"] = "Socks overview";
+}
+
+@if (Model.allSocks is { Count: > 0 })
+    {
+        <div class="table-responsive shadow-sm">
+            <table class="table table-hover align-middle mb-0">
+                <thead class="table-light">
+                    <tr>
+                        <th scope="col">Serial #</th>
+                        <th scope="col" class="text-end">Price / Pair</th>
+                        <th scope="col" class="text-end">Pairs / Sack</th>
+                        <th scope="col" class="text-end">Sacks</th>
+                        <th scope="col" class="text-end">Overall Price</th>
+                        <th scope="col">Date</th>
+                        <th scope="col" class="text-end">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                @foreach (var s in Model.allSocks)
+                {
+                    <tr>
+                        <td>@s.SerialNumber</td>
+                        <td class="text-end">@s.PricePerPair.ToString("N2")</td>
+                        <td class="text-end">@s.QuantityPerSack</td>
+                        <td class="text-end">@s.SackQuantity</td>
+                        <td class="text-end">@s.OverallPrice.ToString("N2")</td>
+                        <td>@s.dateTime.ToString("yyyy-MM-dd")</td>
+                        <td class="text-end">
+                            <!-- Hook these up to your pages/handlers when ready -->
+                            <a asp-page="/EditSock" asp-route-id="@s.Id" class="btn btn-sm btn-outline-secondary">Edit</a>
+                            <form method="post" asp-page-handler="Delete" asp-route-id="@s.Id"
+                                  class="d-inline">
+                                <button type="submit" class="btn btn-sm btn-outline-danger">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-info shadow-sm">
+            No socks found. Click <a asp-page="/AddSock">Add Sock</a> to create your first item.
+        </div>
+    }
