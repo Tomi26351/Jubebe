@@ -4,6 +4,7 @@ using BLL.Services;
 using Core;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Database.DatabaseAccess;
 
 
 public class AddSockModel : PageModel
@@ -18,7 +19,7 @@ public class AddSockModel : PageModel
         _sockService = sockService;
     }
 
-    public async Task<IActionResult> OnPostAsync()
+    public async Task<IActionResult> OnPost()
     {
         _sockService.createSock(Sock);
         return Redirect("/Index");

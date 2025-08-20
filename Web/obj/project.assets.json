@@ -1649,6 +1649,7 @@
     "net8.0": [
       "BLL >= 1.0.0",
       "Core >= 1.0.0",
+      "Database >= 1.0.0",
       "Microsoft.Data.SqlClient >= 6.1.1"
     ]
   },
@@ -1682,6 +1683,9 @@
             },
             "C:\\Users\\yizem\\Documents\\Jubebe\\Core\\Core.csproj": {
               "projectPath": "C:\\Users\\yizem\\Documents\\Jubebe\\Core\\Core.csproj"
+            },
+            "C:\\Users\\yizem\\Documents\\Jubebe\\Database\\Database.csproj": {
+              "projectPath": "C:\\Users\\yizem\\Documents\\Jubebe\\Database\\Database.csproj"
             }
           }
         }
