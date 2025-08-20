@@ -25,10 +25,8 @@ public class SockDataBaseAccess
             command.Parameters.AddWithValue("@PricePerPair", sock.PricePerPair);
             command.Parameters.AddWithValue("@QuantityPerSack", sock.QuantityPerSack);
             command.Parameters.AddWithValue("@SackQuantity", sock.SackQuantity);
-            command.Parameters.AddWithValue("@OverallPrice", sock);
+            command.Parameters.AddWithValue("@OverallPrice", sock.OverallPrice);
             command.Parameters.AddWithValue("@dateTime", sock.dateTime);
         }
-
-        
     }
 }
