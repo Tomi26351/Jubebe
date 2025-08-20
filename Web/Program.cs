@@ -1,9 +1,19 @@
+using BLL.Services;
+using Database;
+using Database.DatabaseAccess;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 
+builder.Services.AddScoped<ISockDatabaseAccess, SockDatabaseAccess>();
+builder.Services.AddScoped<SockService>();  
+
+
+
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
