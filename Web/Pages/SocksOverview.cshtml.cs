@@ -10,17 +10,31 @@ namespace Jubebe.Web.Pages;
 public class SocksOverviewModel : PageModel
 {
     public SockService _sockService;
+    public SearchFunctionality _searchService;
 
     [BindProperty]
     public List<Sock> allSocks { get; set; }
 
-    public SocksOverviewModel(SockService sockService)
+    public SocksOverviewModel(SockService sockService, SearchFunctionality seachService)
     {
         _sockService = sockService;
+        _searchService = seachService;
     }
 
-    public void OnGet()
+    public void OnGet(string? query)
     {
-        allSocks = _sockService.getAllSocks();
+        allSocks = string.IsNullOrWhiteSpace(query)
+            ? _sockService.getAllSocks()
+            : _searchService.SearchSocks(query);
+    }
+
+    public async Task<IActionResult> OnGetSearch(string query)
+    {
+        if (query != null)
+        {
+            allSocks = _searchService.SearchSocks(query);
+        }
+
+        return Page();
     }
 }

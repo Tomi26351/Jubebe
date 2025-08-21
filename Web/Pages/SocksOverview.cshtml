@@ -18,13 +18,13 @@
 
     <div class="card border-0 rounded-3">
         <div class="card-body border-bottom">
-            <form method="get" class="row g-2 align-items-center">
+            <form method="get" asp-page-handler="Search" class="row g-2 align-items-center">
                 <div class="col-12 col-md-8">
                     <div class="input-group">
                         <span class="input-group-text border-end-0">
                             <span class="text-body-secondary">🔎</span>
                         </span>
-                        <input name="q" class="form-control border-start-0" type="search" placeholder="Search by serial number…" />
+                        <input name="query" class="form-control border-start-0" type="search" placeholder="Search by serial number…" />
                     </div>
                 </div>
                 <div class="col-6 col-md-auto">
@@ -34,6 +34,7 @@
                     <a asp-page="./SocksOverview" class="btn btn-link text-decoration-none">Reset</a>
                 </div>
             </form>
+
         </div>
 
         @if (Model.allSocks is { Count: > 0 })
@@ -55,13 +56,21 @@
                         @foreach (var s in Model.allSocks)
                         {
                             <tr>
-                                <td class="fw-medium">@s.SerialNumber</td>
-                                <td class="text-end">@s.PricePerPair.ToString("N2")</td>
-                                <td class="text-end">@s.QuantityPerSack</td>
+                                <td class="fw-medium">
+                                    <span class="badge">@s.SerialNumber</span>
+                                </td>
+                                <td class="text-end">
+                                    <span class="badge">@s.PricePerPair.ToString("N2")</span>
+                                </td>
+                                <td class="text-end">
+                                    <span class="badge">@s.QuantityPerSack</span>
+                                </td>
                                 <td class="text-end">
                                     <span class="badge">@s.SackQuantity</span>
                                 </td>
-                                <td class="text-end fw-semibold">@s.OverallPrice.ToString("N2")</td>
+                                <td class="text-end fw-semibold">
+                                    <span class="badge">@s.OverallPrice.ToString("N2")</span>
+                                </td>
                                 <td class="text-body-secondary">@s.dateTime.ToString("yyyy-MM-dd")</td>
                                 <td class="text-end">
                                     <div class="btn-group btn-group-sm" role="group">

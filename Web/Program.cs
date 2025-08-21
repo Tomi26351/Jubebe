@@ -7,7 +7,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 
 builder.Services.AddScoped<ISockDatabaseAccess, SockDatabaseAccess>();
-builder.Services.AddScoped<SockService>();  
+builder.Services.AddScoped<SockService>();
+builder.Services.AddScoped<SearchFunctionality>();
 
 
 
