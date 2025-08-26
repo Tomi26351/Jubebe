@@ -14,6 +14,8 @@ public class SocksOverviewModel : PageModel
 
     [BindProperty]
     public List<Sock> allSocks { get; set; }
+    [BindProperty]
+    public Order order { get; set; }
 
     public SocksOverviewModel(SockService sockService, SearchFunctionality seachService)
     {

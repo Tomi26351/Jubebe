@@ -99,26 +99,52 @@
 </div>
 
 @* sell modal *@
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form method="post" asp-page-handler="Order">
-            <div>
-                <label class="form-label fw-semibold">Name of client/Име на клиент</label>
-                <input>
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" data-bs-theme="light">
+    <div class="modal-dialog">
+        <div class="modal-content bg-white text-dark">
+            <div class="modal-header bg-white text-dark">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
 
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Understood</button>
-      </div>
+            <div class="modal-body bg-white text-dark">
+                <form id="orderForm" method="post" asp-page-handler="Order">
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">Name of client/Име на клиент</label>
+                        <input asp-for="order.clientName" class="form-control bg-white text-dark" placeholder="Enter client name..." />
+                        <span asp-validation-for="order.clientName" class="text-danger small"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">Price/Цена</label>
+                        <input asp-for="order.sellPrice" class="form-control bg-white text-dark" placeholder="0.00" />
+                        <span asp-validation-for="order.sellPrice" class="text-danger small"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">Paid / Платено</label>
+                        <select asp-for="order.isPaid" class="form-select bg-white text-dark">
+                            <option value="true">Yes</option>
+                            <option value="false">No</option>
+                        </select>
+                        <span asp-validation-for="order.isPaid" class="text-danger small"></span>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label fw-semibold">Date / Дата</label>
+                        <input asp-for="order.date" type="date" class="form-control bg-white text-dark" />
+                        <span asp-validation-for="order.date" class="text-danger small"></span>
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal-footer bg-white text-dark">
+                <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+                <!-- Submit the form even though the button is outside it -->
+                <button type="submit" form="orderForm" class="btn btn-outline-dark">Understood</button>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
+

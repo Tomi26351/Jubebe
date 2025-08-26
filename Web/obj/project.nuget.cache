@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "J92z0v0vNns=",
+  "dgSpecHash": "Q9TX5HBHf0o=",
   "success": true,
-  "projectFilePath": "C:\\Users\\yizem\\Documents\\Jubebe\\Web\\Jubebe.csproj",
+  "projectFilePath": "C:\\Users\\yizem\\Documents\\Jubebe2\\Web\\Jubebe.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yizem\\.nuget\\packages\\azure.core\\1.47.1\\azure.core.1.47.1.nupkg.sha512",
     "C:\\Users\\yizem\\.nuget\\packages\\azure.identity\\1.14.2\\azure.identity.1.14.2.nupkg.sha512",

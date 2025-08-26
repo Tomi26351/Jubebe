@@ -1,36 +1,42 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yizem\\Documents\\Jubebe\\Web\\Jubebe.csproj": {}
+    "C:\\Users\\yizem\\Documents\\Jubebe2\\Web\\Jubebe.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yizem\\Documents\\Jubebe\\BLL\\BLL.csproj": {
+    "C:\\Users\\yizem\\Documents\\Jubebe2\\BLL\\BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yizem\\Documents\\Jubebe\\BLL\\BLL.csproj",
+        "projectUniqueName": "C:\\Users\\yizem\\Documents\\Jubebe2\\BLL\\BLL.csproj",
         "projectName": "BLL",
-        "projectPath": "C:\\Users\\yizem\\Documents\\Jubebe\\BLL\\BLL.csproj",
+        "projectPath": "C:\\Users\\yizem\\Documents\\Jubebe2\\BLL\\BLL.csproj",
         "packagesPath": "C:\\Users\\yizem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yizem\\Documents\\Jubebe\\BLL\\obj\\",
+        "outputPath": "C:\\Users\\yizem\\Documents\\Jubebe2\\BLL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\yizem\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\yizem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\yizem\\Documents\\Jubebe\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\yizem\\Documents\\Jubebe\\Core\\Core.csproj"
+              "C:\\Users\\yizem\\Documents\\Jubebe2\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\yizem\\Documents\\Jubebe2\\Core\\Core.csproj"
               },
-              "C:\\Users\\yizem\\Documents\\Jubebe\\Database\\Database.csproj": {
-                "projectPath": "C:\\Users\\yizem\\Documents\\Jubebe\\Database\\Database.csproj"
+              "C:\\Users\\yizem\\Documents\\Jubebe2\\Database\\Database.csproj": {
+                "projectPath": "C:\\Users\\yizem\\Documents\\Jubebe2\\Database\\Database.csproj"
               }
             }
           }
@@ -44,7 +50,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -65,26 +72,32 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.413/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\yizem\\Documents\\Jubebe\\Core\\Core.csproj": {
+    "C:\\Users\\yizem\\Documents\\Jubebe2\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yizem\\Documents\\Jubebe\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\yizem\\Documents\\Jubebe2\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\yizem\\Documents\\Jubebe\\Core\\Core.csproj",
+        "projectPath": "C:\\Users\\yizem\\Documents\\Jubebe2\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\yizem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yizem\\Documents\\Jubebe\\Core\\obj\\",
+        "outputPath": "C:\\Users\\yizem\\Documents\\Jubebe2\\Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\yizem\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\yizem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -102,7 +115,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -123,34 +137,40 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.413/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\yizem\\Documents\\Jubebe\\Database\\Database.csproj": {
+    "C:\\Users\\yizem\\Documents\\Jubebe2\\Database\\Database.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yizem\\Documents\\Jubebe\\Database\\Database.csproj",
+        "projectUniqueName": "C:\\Users\\yizem\\Documents\\Jubebe2\\Database\\Database.csproj",
         "projectName": "Database",
-        "projectPath": "C:\\Users\\yizem\\Documents\\Jubebe\\Database\\Database.csproj",
+        "projectPath": "C:\\Users\\yizem\\Documents\\Jubebe2\\Database\\Database.csproj",
         "packagesPath": "C:\\Users\\yizem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yizem\\Documents\\Jubebe\\Database\\obj\\",
+        "outputPath": "C:\\Users\\yizem\\Documents\\Jubebe2\\Database\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\yizem\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\yizem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\yizem\\Documents\\Jubebe\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\yizem\\Documents\\Jubebe\\Core\\Core.csproj"
+              "C:\\Users\\yizem\\Documents\\Jubebe2\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\yizem\\Documents\\Jubebe2\\Core\\Core.csproj"
               }
             }
           }
@@ -164,7 +184,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -191,40 +212,46 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.413/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\yizem\\Documents\\Jubebe\\Web\\Jubebe.csproj": {
+    "C:\\Users\\yizem\\Documents\\Jubebe2\\Web\\Jubebe.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yizem\\Documents\\Jubebe\\Web\\Jubebe.csproj",
+        "projectUniqueName": "C:\\Users\\yizem\\Documents\\Jubebe2\\Web\\Jubebe.csproj",
         "projectName": "Jubebe",
-        "projectPath": "C:\\Users\\yizem\\Documents\\Jubebe\\Web\\Jubebe.csproj",
+        "projectPath": "C:\\Users\\yizem\\Documents\\Jubebe2\\Web\\Jubebe.csproj",
         "packagesPath": "C:\\Users\\yizem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yizem\\Documents\\Jubebe\\Web\\obj\\",
+        "outputPath": "C:\\Users\\yizem\\Documents\\Jubebe2\\Web\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\yizem\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\yizem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\yizem\\Documents\\Jubebe\\BLL\\BLL.csproj": {
-                "projectPath": "C:\\Users\\yizem\\Documents\\Jubebe\\BLL\\BLL.csproj"
+              "C:\\Users\\yizem\\Documents\\Jubebe2\\BLL\\BLL.csproj": {
+                "projectPath": "C:\\Users\\yizem\\Documents\\Jubebe2\\BLL\\BLL.csproj"
               },
-              "C:\\Users\\yizem\\Documents\\Jubebe\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\yizem\\Documents\\Jubebe\\Core\\Core.csproj"
+              "C:\\Users\\yizem\\Documents\\Jubebe2\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\yizem\\Documents\\Jubebe2\\Core\\Core.csproj"
               },
-              "C:\\Users\\yizem\\Documents\\Jubebe\\Database\\Database.csproj": {
-                "projectPath": "C:\\Users\\yizem\\Documents\\Jubebe\\Database\\Database.csproj"
+              "C:\\Users\\yizem\\Documents\\Jubebe2\\Database\\Database.csproj": {
+                "projectPath": "C:\\Users\\yizem\\Documents\\Jubebe2\\Database\\Database.csproj"
               }
             }
           }
@@ -238,7 +265,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -268,7 +296,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.413/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
