@@ -39,4 +39,9 @@ public class SocksOverviewModel : PageModel
 
         return Page();
     }
+
+    public void OnPostOrder()
+    {
+
+    }
 }
