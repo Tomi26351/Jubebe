@@ -1,4 +1,4 @@
-﻿namespace Database;
+﻿namespace Database.DatabaseAccess;
 using Microsoft.Data.SqlClient;
 
 public class Database

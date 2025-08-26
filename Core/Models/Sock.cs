@@ -10,6 +10,14 @@ public class Sock
     public double OverallPrice { get; set; }
     public DateTime dateTime { get; set; }
 
-
+    public Sock(string SerialNumber, double PricePerPair, int QuantityPerSack, int SackQuantity, double OverallPrice, DateTime dateTime)
+    {
+        this.SerialNumber = SerialNumber;
+        this.PricePerPair = PricePerPair;
+        this.QuantityPerSack = QuantityPerSack;
+        this.SackQuantity = SackQuantity;
+        this.OverallPrice = OverallPrice;
+        this.dateTime = dateTime;
+    }
     public Sock() { }
 }
