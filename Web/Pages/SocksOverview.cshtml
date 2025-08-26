@@ -107,7 +107,13 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        ...
+        <form method="post" asp-page-handler="Order">
+            <div>
+                <label class="form-label fw-semibold">Name of client/Име на клиент</label>
+                <input>
+            </div>
+
+        </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

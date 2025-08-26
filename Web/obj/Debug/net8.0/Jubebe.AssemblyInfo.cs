@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Jubebe")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+628df58d416c9ff466eb1e045364a077152022ff")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8148ae1f359592a1ba8f58392c3f70c73314a7d7")]
 [assembly: System.Reflection.AssemblyProductAttribute("Jubebe")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Jubebe")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
